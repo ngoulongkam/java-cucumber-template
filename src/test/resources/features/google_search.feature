@@ -4,12 +4,12 @@ Feature: Google search
   So that I can find web pages related to provided phrase
 
   @smoke
-  Scenario Outline: Google search
-    Given I'm on google.co.uk main page
-    When I enter search phrase <searchPhrase>
-    And I click search
-    Then Link <link> should be displayed as first one
+  Scenario: Google search
+    Given Im on google main page
+#    When I enter search phrase <searchPhrase>
+#    And I click search
+#    Then Link <link> should be displayed as first one
 
-    Examples:
-      | searchPhrase   | link                        |
-      | "google co uk" | "https://www.google.co.uk/" |
+#    Examples:
+#      | searchPhrase   | link                        |
+#      | "google co uk" | "https://www.google.co.uk/" |

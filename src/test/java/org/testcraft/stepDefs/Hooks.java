@@ -11,6 +11,7 @@ public class Hooks {
 
     @Before
     public void openBrowser() {
+        System.setProperty("webdriver.chrome.driver", "/home/ngou-longkam/Downloads/chromedriver");
         driver = new ChromeDriver();
     }
 

@@ -1,20 +1,15 @@
 package org.testcraft.stepDefs;
 
-import cucumber.api.java8.En;
+import cucumber.api.java.en.Given;
 import org.openqa.selenium.WebDriver;
 
-public class GoogleSearchStepdefs implements En {
+public class GoogleSearchStepdefs {
 
-    public WebDriver driver;
+    private WebDriver driver;
 
-    public void GoogleSearchStepdefs() {
-
+    @Given("Im on google main page")
+    public void Im_on_google_main_page() {
         driver = Hooks.driver;
-
-        Given("^I'm on google\\.co\\.uk main page$", () -> {
-            driver.get("http://www.google.co.uk");
-        });
-
+        driver.get("http://www.google.co.uk");
     }
-
 }
